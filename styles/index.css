@@ -84,3 +84,12 @@ h2 {
 h1 {
     margin-bottom: 0.45rem;
 }
+
+.list p[class="credits"] {
+    font-size: small;
+    margin-bottom: 1rem;
+    background-color: #dbdbdb;
+    color: var(--black);
+    border: none;
+    text-align: center;
+}

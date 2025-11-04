@@ -94,7 +94,15 @@ function insertCourses(coursesArray) {
         }
     });
 
+    let totalCredits = coursesArray.reduce((total, course) => total + course.credits, 0);
+    coursesHTML = coursesHTML.concat(`<p class="credits">The total credits for course listed above is: ${totalCredits}</p>`);
+
     list.innerHTML = coursesHTML.join("");
+}
+
+function insertCredits(coursesArray) {
+
+
 }
 
 const allButton = document.getElementById('all');
@@ -102,15 +110,18 @@ const cseButton = document.getElementById('cse');
 const wddButton = document.getElementById('wdd');
 
 allButton.addEventListener('click', () => {
-    list.innerHTML = insertCourses(courses).join("");
+    insertCourses(courses);
+    insertCredits(courses);
 });
 
 cseButton.addEventListener('click', () => {
     const cseFiltered = courses.filter(course => course.subject === 'CSE');
-    list.innerHTML = insertCourses(cseFiltered).join("");
+    insertCourses(cseFiltered);
+    insertCredits(cseFiltered);
 });
 
 wddButton.addEventListener('click', () => {
     const wddFiltered = courses.filter(course => course.subject === 'WDD');
-    list.innerHTML = insertCourses(wddFiltered).join("");
+    insertCourses(wddFiltered);
+    insertCredits(wddFiltered);
 });
