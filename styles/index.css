@@ -40,7 +40,8 @@ h2 {
     width: 100%;
     padding: 0.25rem;
     color: var(--white);
-    font-size: 1.2rem;
+    font-family: var(--paragraph-font);
+    font-size: medium;
     cursor: pointer;
 }
 
@@ -69,6 +70,7 @@ h2 {
     padding: 0.45rem;
     text-align: center;
     font-family: var(--paragraph-font);
+    font-size: medium;
     background-color: var(--color-2);
     color: var(--white);
     border: var(--black) 3px solid;
