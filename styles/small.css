@@ -1,0 +1,145 @@
+:root {
+    --heading-font: "Roboto Mono", monospace;
+    --paragraph-font: "Roboto", sans-serif;
+
+    --white: #EDF2F4;
+    --black: #272727;
+    --color-1: #227C9D;
+    --color-2: #FE6D73;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--heading-font);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+}
+
+a {
+    font-family: var(--paragraph-font);
+}
+
+h1 {
+    margin-left: 0.9rem;
+}
+
+/* ------------------------------ Header Styles ------------------------------ */
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 0.6rem 0 0.6rem 0.9rem;
+    align-items: end;
+    column-gap: 8px;
+    border-bottom: #ddd 1.5px solid;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--black)
+}
+
+/* ------------------------------ Navigation Styles ------------------------------ */
+/* Hamburger */
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--black);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* Navigation Bar */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+    background-color: var(--white);
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 0.9rem;
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: #ddd 1.5px solid;
+}
+
+.navigation li.current {
+    background-color: var(--black);
+}
+
+.navigation li.current a {
+    color: var(--white);
+    border-bottom: var(--black) 1.5px solid;
+}
+
+.navigation a:hover,
+.navigation li.current a:hover {
+    background-color: var(--color-1);
+    color: var(--white);
+    border-bottom: var(--color-1) 1.5px solid;
+}
+
+/* ------------------------------ Footer Styles ------------------------------ */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1.2rem 0.9rem;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.8rem;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc 1px solid;
+    border-radius: 22px;
+}
+
+.social a:hover {
+    background-color: #444;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+footer p, footer span {
+    margin-top: 0.50rem;
+    font-family: var(--paragraph-font);
+    font-size: 0.9rem;
+}

@@ -4,11 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>WDD 231 – Home Page – Luis Montenegro</title>
+    <meta name="author" content="Luis Eduardo Montenegro Llamozas">
+    <meta name="description"
+        content="Luis Eduardo Montenegro Llamozas's Home Page part of the WDD 231 Chamber of Commerce project">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/getcourses.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="1" height="1">
+        <span>WDD 231 - Luis Montenegro</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home Page</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>My name is Luis Montenegro, a Venezuelan currently residing in Spain. I love video games and fantasy
+                stories. I am passionate about programming and I dream of one day creating my own video game. I
+                strive
+                every day to achieve my goals and improve myself.</p>
+        </section>
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <picture>
+                <source media="(min-width: 500px)" srcset="images/luismontenegro-medium.webp">
+                <img src="images/luismontenegro-small.webp" alt="Luis Montenegro's photo" id="luisphoto"
+                    class="luisphoto">
+            </picture>
 
+        </section>
+        <section class="certificate-courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter" id="filter">
+                <button type="button" id="all" class="filter-button" aria-label="Show all courses">ALL</button>
+                <button type="button" id="cse" class="filter-button" aria-label="Show CSE courses only">CSE</button>
+                <button type="button" id="wdd" class="filter-button" aria-label="Show WDD courses only">WDD</button>
+            </div>
+            <div class="list" id="list"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/devlmon" target="_blank"><img src="images/github.svg" alt="Github" width="1"
+                    height="1"></a>
+            <a href="https://www.linkedin.com/in/luismon7/" target="_blank"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="1" height="1"></a>
+        </div>
+        <p>&copy;<span id="currentyear"></span> | Luis Montenegro | Spain</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
