@@ -1,0 +1,61 @@
+:root {
+    --heading-font: "Roboto Mono", monospace;
+    --paragraph-font: "Roboto", sans-serif;
+
+    --white: #EDF2F4;
+    --black: #272727;
+    --color-1: #165664;
+    --color-2: #663C00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--heading-font);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+}
+
+h1, footer {
+    text-align: center;
+    margin: 2rem;
+    color: var(--color-1);
+}
+
+main {
+    background-color: var(--color-1);
+    margin: 2rem;
+    padding: 1rem;
+    box-shadow: var(--black) 0px 0px 20px;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #bababa;
+}
+
+#cards section {
+    padding: 1.25rem;
+    background-color: var(--white);
+}
+
+#cards section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+#cards section img {
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    box-shadow: var(--black) 0px 0px 15px;
+}
