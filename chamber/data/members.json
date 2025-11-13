@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Montenegro Design Studio",
+            "address": "Calle Larios 12, Málaga, Spain",
+            "phone": "+34 600 123 456",
+            "website": "https://montenegrostudio.com",
+            "image": "images/montenegro-logo.webp",
+            "membershipLevel": 3,
+            "description": "Creative agency specializing in web design, branding, and UX consulting."
+        },
+        {
+            "name": "Costa Coffee Roasters",
+            "address": "Av. de Andalucía 45, Málaga, Spain",
+            "phone": "+34 951 789 321",
+            "website": "https://costacoffee.es",
+            "image": "images/costa-logo.webp",
+            "membershipLevel": 2,
+            "description": "Local coffee roastery offering organic blends and barista training."
+        },
+        {
+            "name": "TechNova Solutions",
+            "address": "Parque Tecnológico, Málaga, Spain",
+            "phone": "+34 952 456 789",
+            "website": "https://technova-solutions.com",
+            "image": "images/technova-logo.webp",
+            "membershipLevel": 1,
+            "description": "IT services and cloud infrastructure provider for small businesses."
+        },
+        {
+            "name": "Andalusian Artisans Co.",
+            "address": "Calle Granada 8, Málaga, Spain",
+            "phone": "+34 600 987 654",
+            "website": "https://andalusianartisans.com",
+            "image": "images/artisans-logo.webp",
+            "membershipLevel": 2,
+            "description": "Collective of local artists and craftspeople selling handmade goods."
+        },
+        {
+            "name": "EcoMove Rentals",
+            "address": "Estación María Zambrano, Málaga, Spain",
+            "phone": "+34 951 234 567",
+            "website": "https://ecomove.es",
+            "image": "images/ecomove-logo.webp",
+            "membershipLevel": 3,
+            "description": "Electric vehicle and bike rental service promoting sustainable tourism."
+        },
+        {
+            "name": "Sol y Sombra Restaurant",
+            "address": "Paseo Marítimo 22, Málaga, Spain",
+            "phone": "+34 952 321 654",
+            "website": "https://solysombra.com",
+            "image": "images/solysombra-logo.webp",
+            "membershipLevel": 1,
+            "description": "Traditional Andalusian cuisine with a modern twist and sea views."
+        },
+        {
+            "name": "Málaga Language Exchange",
+            "address": "Calle Victoria 5, Málaga, Spain",
+            "phone": "+34 600 765 432",
+            "website": "https://malagalanguage.com",
+            "image": "images/language-logo.webp",
+            "membershipLevel": 2,
+            "description": "Community hub for bilingual meetups, translation services, and tutoring."
+        }
+    ]
+}
