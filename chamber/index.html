@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce – Home – Luis Montenegro - WDD 231</title>
+    <meta name="author" content="Luis Eduardo Montenegro Llamozas">
+    <meta name="description"
+        content="Luis Eduardo Montenegro Llamozas's Home Page part of the WDD 231 Chamber of Commerce Project">
+
+    <meta property="og:title" content="Chamber of Commerce – Home – Luis Montenegro - WDD 231">
+    <meta property="og:description"
+        content="Luis Eduardo Montenegro Llamozas's Home Page part of the WDD 231 Chamber of Commerce Project.">
+    <meta property="og:url" content="https://devlmon.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://devlmon.github.io/wdd231/chamber/meta-index.png" />
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/getweather.js" defer></script>
+    <script src="scripts/getforecast.js" defer></script>
+    <script src="scripts/getspotlight.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="1" height="1">
+        <span>WDD 231 - Málaga Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Final Project</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero-container">
+            <picture class="hero">
+                <source media="(min-width: 50rem)" srcset="images/hero-large.webp">
+                <source media="(min-width: 40rem)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Picture of Malaga" loading="lazy">
+            </picture>
+            <a href="#" class="action-call bold">Be part of us!</a>
+        </div>
+
+        <h1>Home Page</h1>
+
+        <div class="info-container">
+            <div class="events">
+                <h2>Events</h2>
+                <ul class="event-data">
+                    <li><span class="bold">Networking Breakfast (January 2026):</span> Meet fellow entrepreneurs and
+                        exchange ideas over coffee.</li>
+                    <li><span class="bold">Digitalization Workshop (February 2026):</span> Learn practical tools for
+                        e-commerce,
+                        cybersecurity, and online marketing.</li>
+                    <li><span class="bold">International Trade Mission (March 2026):</span> Explore opportunities to
+                        expand
+                        Málaga businesses abroad.</li>
+                </ul>
+            </div>
+
+            <div class="weather">
+                <h2>Current Weather</h2>
+                <section class="weather-data">
+                    <figure>
+                        <img id="weather-icon" src="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <div>
+                        <p id="temperature"></p>
+                        <p id="description"></p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+                <section class="forecast-data">
+                    <p id="today"></p>
+                    <p id="tomorrow"></p>
+                    <p id="after-tomorrow"></p>
+                </section>
+            </div>
+        </div>
+
+        <div class="spotlight">
+        </div>
+    </main>
+    <footer>
+        <div class="direction">
+            <p class="bold">Málaga Chamber of Commerce</p>
+            <p>6 Ejido St., Central District</p>
+            <p>Málaga, 29013 Málaga</p>
+            <p>info@placeholdermalagacc.org</p>
+            <p>(123) 111-2222</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/devlmon" target="_blank"><img src="images/github.svg"
+                    alt="Luis Montenegro's Github link" width="1" height="1"></a>
+            <a href="https://www.linkedin.com/in/luismon7/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Luis Montenegro's LinkedIn link" width="1" height="1"></a>
+        </div>
+        <div class="project-info">
+            <p class="bold">WDD231 Class Project</p>
+            <p>Luis Eduardo Montenegro Llamozas</p>
+            <p>&copy;<span id="currentyear"></span> Málaga Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

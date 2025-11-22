@@ -22,8 +22,11 @@ body {
 }
 
 a,
-p {
+p,
+li,
+span {
     font-family: var(--paragraph-font);
+    color: var(--black);
 }
 
 h1 {
@@ -121,7 +124,6 @@ header span {
 /* ------------------------------ Footer Styles ------------------------------ */
 footer {
     background-color: var(--black);
-    color: var(--white);
     padding: 1.25rem 0.90rem;
 }
 
@@ -160,4 +162,5 @@ footer span {
     margin-top: 0.50rem;
     font-family: var(--paragraph-font);
     font-size: 0.9rem;
+    color: var(--white);
 }
