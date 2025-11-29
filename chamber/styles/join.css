@@ -1,0 +1,213 @@
+/* Form Section */
+main section {
+    padding: 0.90rem;
+}
+
+main section h2 {
+    margin-bottom: 0.90rem;
+}
+
+.join-us-form {
+    max-width: 600px;
+}
+
+fieldset {
+    border: var(--color-1) 2px solid;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+legend {
+    padding: 0 0.45rem;
+    color: var(--color-1);
+    font-size: 1.10rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+    font-family: var(--paragraph-font);
+}
+
+label span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    color: var(--black);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: var(--color-2) 1px solid;
+    border-radius: 4px;
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: var(--color-1) 2px solid;
+    background-color: #f0f8ff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input[type="submit"] {
+    background-color: var(--color-1);
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.90rem;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    transition: 0.35s ease-in-out;
+}
+
+/* Membership Levels Section */
+
+.level-box {
+    margin: 0.90rem;
+    border: var(--color-2) 2px solid;
+    border-radius: 8px;
+    padding: 0.90rem;
+    background-color: #f9f9f9;
+}
+
+
+
+.level-box h3 {
+    color: var(--color-1);
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+.level-button {
+    background-color: var(--color-1);
+    color: var(--white);
+    padding: 0.45rem 1.50rem;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--heading-font);
+    cursor: pointer;
+}
+
+.level-button:hover {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    transition: 0.35s ease-in-out;
+}
+
+/* Animation Keyframes */
+@keyframes fadeToNP {
+    from {
+        background-color: #f9f9f9;
+    }
+
+    to {
+        background-color: rgba(22, 86, 100, 0.1);
+    }
+}
+
+@keyframes fadeToBronze {
+    from {
+        background-color: #f9f9f9;
+    }
+
+    to {
+        background-color: rgba(205, 127, 50, 0.1);
+    }
+}
+
+@keyframes fadeToSilver {
+    from {
+        background-color: #f9f9f9;
+    }
+
+    to {
+        background-color: rgba(192, 192, 192, 0.15);
+    }
+}
+
+@keyframes fadeToGold {
+    from {
+        background-color: #f9f9f9;
+    }
+
+    to {
+        background-color: rgba(255, 215, 0, 0.1);
+    }
+}
+
+#non-profit {
+    animation: fadeToNP 3s ease-in-out forwards;
+}
+
+#bronze-profit {
+    animation: fadeToBronze 3s ease-in-out forwards;
+}
+
+#silver-profit {
+    animation: fadeToSilver 3s ease-in-out forwards;
+}
+
+#gold-profit {
+    animation: fadeToGold 3s ease-in-out forwards;
+}
+
+/* Large view */
+@media only screen and (min-width: 40rem) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main h1 {
+        grid-column: 1 / 3;
+    }
+
+    fieldset {
+        padding: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        padding: 0.75rem;
+    }
+
+    .level-box {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        column-gap: 1rem;
+    }
+
+    .level-box h3 {
+        margin-bottom: 0;
+    }
+}

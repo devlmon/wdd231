@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce – Join – Luis Montenegro - WDD 231</title>
+    <meta name="author" content="Luis Eduardo Montenegro Llamozas">
+    <meta name="description"
+        content="Luis Eduardo Montenegro Llamozas's Join Page part of the WDD 231 Chamber of Commerce Project">
+
+    <meta property="og:title" content="Chamber of Commerce – Join – Luis Montenegro - WDD 231">
+    <meta property="og:description"
+        content="Luis Eduardo Montenegro Llamozas's Join Page part of the WDD 231 Chamber of Commerce Project.">
+    <meta property="og:url" content="https://devlmon.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://devlmon.github.io/wdd231/chamber/meta-index.png" />
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/membership.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="1" height="1">
+        <span>WDD 231 - Málaga Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Final Project</a></li>
+            <li class="current"><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Join Us</h1>
+        <section class="membership-form">
+            <h2>Membership Application Form</h2>
+            <form action="thankyou.html" method="get" class="join-us-form">
+                <fieldset>
+                    <legend class="bold">My Application Details</legend>
+
+                    <label for="first-name"><span>First Name*</span>
+                        <input id="first-name" name="first-name" type="text" title="Applicant's first name"
+                            autocomplete="given-name" required></label>
+
+                    <label for="last-name"><span>Last Name*</span>
+                        <input id="last-name" name="last-name" type="text" title="Applicant's last name"
+                            autocomplete="family-name" required></label>
+
+                    <label for="org-title"><span>Organizational Title</span>
+                        <input id="org-title" name="org-title" type="text"
+                            title="Applicant's organizational title (letters, hyphens and spaces only, min 7 chars)"
+                            autocomplete="organization-title" pattern="^[A-Za-z -]{7,}$"></label>
+
+                    <label for="email"><span>Email Address*</span>
+                        <input id="email" name="email" type="email" title="Applicant's email address"
+                            autocomplete="email" placeholder="name@example.com" required></label>
+
+                    <label for="phone"><span>Mobile Phone*</span>
+                        <input id="phone" name="phone" type="tel" title="Applicant's mobile phone" autocomplete="tel"
+                            required></label>
+
+                    <label for="organization"><span>Business / Organization Name*</span>
+                        <input id="organization" name="organization" type="text" title="Business or organization name"
+                            autocomplete="organization" required></label>
+
+                    <label for="membership"><span>Membership Level*</span>
+                        <select id="membership" name="membership" required>
+                            <option value="" disabled selected>Select membership level...</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select></label>
+
+                    <label for="description"><span>Business / Organization Description</span>
+                        <textarea id="description" name="description"
+                            title="Short description of the business or organization"></textarea></label>
+
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                </fieldset>
+
+                <input type="submit" value="Apply for membership">
+            </form>
+        </section>
+        <section class="membership levels">
+            <h2>Membership Levels</h2>
+            <div class="level-box" id="non-profit">
+                <h3>Non Profit Membership Level</h3>
+                <button class="level-button" id="np-levelButton">Learn More</button>
+            </div>
+            <div class="level-box" id="bronze-profit">
+                <h3>Bronze Membership Level</h3>
+                <button class="level-button" id="bronze-levelButton">Learn More</button>
+            </div>
+            <div class="level-box" id="silver-profit">
+                <h3>Silver Membership Level</h3>
+                <button class="level-button" id="silver-levelButton">Learn More</button>
+            </div>
+            <div class="level-box" id="gold-profit">
+                <h3>Gold Membership Level</h3>
+                <button class="level-button" id="gold-levelButton">Learn More</button>
+            </div>
+            <dialog id="dialogBox">
+                <div></div>
+                <button id="closeDialogBox"></button>
+            </dialog>
+        </section>
+
+    </main>
+    <footer>
+        <div class="direction">
+            <p class="bold">Málaga Chamber of Commerce</p>
+            <p>6 Ejido St., Central District</p>
+            <p>Málaga, 29013 Málaga</p>
+            <p>info@placeholdermalagacc.org</p>
+            <p>(123) 111-2222</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/devlmon" target="_blank"><img src="images/github.svg"
+                    alt="Luis Montenegro's Github link" width="1" height="1"></a>
+            <a href="https://www.linkedin.com/in/luismon7/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Luis Montenegro's LinkedIn link" width="1" height="1"></a>
+        </div>
+        <div class="project-info">
+            <p class="bold">WDD231 Class Project</p>
+            <p>Luis Eduardo Montenegro Llamozas</p>
+            <p>&copy;<span id="currentyear"></span> Málaga Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
