@@ -1,0 +1,107 @@
+:root {
+    --heading-font: "Roboto Mono", monospace;
+    --paragraph-font: "Roboto", sans-serif;
+
+    --primary-color: #7B287D;
+    --secondary-color: #D8B4E2;
+    --accentuation-1: #0e3f60;
+    --accentuation-2: #F9C784;
+    --white: #FFF;
+    --black: #0A100D;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+p,
+li,
+div,
+span {
+    font-family: var(--paragraph-font);
+}
+
+header {
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+main {
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+h3 {
+    padding-top: 0.75rem;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li,
+main p {
+    padding-left: 1rem;
+}
+
+
+img {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+    height: auto;
+}
+
+#desktop {
+    max-width: 700px;
+}
+
+#mobile {
+    max-width: 400px;
+}
+
+#primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+#secondary {
+    background-color: var(--secondary-color);
+}
+
+#firstAccent {
+    background-color: var(--accentuation-1);
+    color: var(--white);
+}
+
+#secondAccent {
+    background-color: var(--accentuation-2);
+}
+
+.headingsExample {
+    font-family: var(--heading-font);
+}
+
+#paragraphExample {
+    padding-top: 0.75rem;
+}
