@@ -1,0 +1,70 @@
+#cards .place-card {
+    background-color: #fbf9f5;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#cards .place-card figure {
+    margin: 0;
+    display: block;
+}
+
+#cards .place-card img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+#cards .place-card h2 {
+    margin: 0.25rem 0 0.25rem 0;
+    font-size: 1.25rem;
+}
+
+#cards .place-card address {
+    font-style: normal;
+    color: var(--muted-color, #333);
+    font-size: 0.95rem;
+}
+
+#cards .place-card p {
+    margin: 0.5rem 0;
+    line-height: 1.4;
+}
+
+.learn-more-btn {
+    align-self: start;
+    background: var(--color-1, #2a7ae2);
+    color: var(--white, #fff);
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.learn-more-btn:hover {
+    background: var(--color-2, #1458b3);
+}
+
+@media only screen and (min-width: 40rem) {
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    #cards .place-card h2,
+    #cards .place-card p,
+    #cards .place-card address {
+        padding: 0.5rem 0;
+    }
+}

@@ -1,0 +1,52 @@
+{
+  "places": [
+    {
+      "title": "Málaga Cathedral",
+      "photoSource": "images/cathedral.webp",
+      "photoSourceAddress": "Cathedral Square, Málaga",
+      "description": "The stunning Renaissance cathedral, known as La Manqueta, is one of Málaga's most iconic landmarks. Its impressive architecture and historical significance make it a must-visit for culture enthusiasts exploring the city's rich heritage and religious heritage."
+    },
+    {
+      "title": "Caminito del Rey Tour",
+      "photoSource": "images/tour.webp",
+      "photoSourceAddress": "El Chorro Gorge, Ardales",
+      "description": "An exhilarating narrow walkway carved into towering canyon walls along a pristine mountain stream. This thrilling adventure offers spectacular views of the Andalusian landscape and is perfect for outdoor enthusiasts seeking unforgettable experiences in nature."
+    },
+    {
+      "title": "Málaga Seaport",
+      "photoSource": "images/seaport.webp",
+      "photoSourceAddress": "Port Authority Building, Málaga Port",
+      "description": "A major Mediterranean cruise destination and commercial hub welcoming thousands of visitors annually. The modern facilities and prime coastal location make it ideal for maritime commerce, tourism, and international trade, boosting the regional economy significantly."
+    },
+    {
+      "title": "Málaga Beach",
+      "photoSource": "images/beach.webp",
+      "photoSourceAddress": "Málaga Coastline, Málaga",
+      "description": "Beautiful golden sandy beaches perfect for relaxation and water sports enthusiasts. With stunning Mediterranean views, excellent amenities, and nearby restaurants, these pristine shores attract visitors seeking sun, sea, and coastal Mediterranean lifestyle experiences year-round."
+    },
+    {
+      "title": "Málaga Plaza de Toros",
+      "photoSource": "images/plaza.webp",
+      "photoSourceAddress": "Ronda, Málaga",
+      "description": "One of Spain's most important bullfighting arenas with historic significance dating back centuries. The elegant structure showcases traditional Andalusian architecture and hosts cultural events that celebrate Spain's rich traditions and provide memorable entertainment experiences for visitors."
+    },
+    {
+      "title": "Gibralfaro Castle",
+      "photoSource": "images/gibralfaro.webp",
+      "photoSourceAddress": "Mount Gibralfaro, Málaga",
+      "description": "An ancient Moorish fortress perched on a hilltop offering panoramic views of the city and Mediterranean Sea. Its strategic location and well-preserved walls provide insight into Málaga's fascinating medieval history and make it a premier tourist attraction."
+    },
+    {
+      "title": "Centre Pompidou Museum",
+      "photoSource": "images/pompidou.webp",
+      "photoSourceAddress": "Port Area, Málaga",
+      "description": "A modern contemporary art museum featuring innovative architecture and curated exhibitions of international and Spanish artists. The vibrant cultural space attracts art enthusiasts and promotes Málaga's transformation into a progressive cultural destination for creative expression."
+    },
+    {
+      "title": "Málaga City Center",
+      "photoSource": "images/center.webp",
+      "photoSourceAddress": "Historic Downtown Area, Málaga",
+      "description": "The vibrant heart of Málaga featuring charming plazas, historic architecture, and bustling shops and restaurants. This walkable district perfectly blends cultural heritage with modern amenities, offering visitors authentic experiences and excellent opportunities for commerce and community engagement."
+    }
+  ]
+}
