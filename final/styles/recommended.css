@@ -1,0 +1,142 @@
+.intro-section {
+    background: linear-gradient(135deg, rgba(123, 40, 125, 0.1) 0%, rgba(123, 40, 125, 0.05) 100%);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    border-left: 5px solid var(--primary-color, #7b287d);
+    box-shadow: 0 4px 15px rgba(123, 40, 125, 0.15);
+}
+
+.intro-section h2 {
+    color: var(--primary-color, #7b287d);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.intro-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.2rem;
+}
+
+.intro-section p:last-child {
+    margin-bottom: 0;
+}
+
+.games-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Game Card Styling */
+.game-card {
+    background: var(--white, #fff);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(123, 40, 125, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(123, 40, 125, 0.2);
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.game-content h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color, #7b287d);
+    margin-bottom: 0.8rem;
+}
+
+.game-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+@media only screen and (min-width: 40rem) {
+    .intro-section {
+        padding: 3rem;
+        font-size: 1.05rem;
+    }
+
+    .intro-section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .games-container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .game-card {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .game-image {
+        max-height: 250px;
+    }
+
+    .game-content h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    .intro-section {
+        padding: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .intro-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .intro-section p {
+        font-size: 1.15rem;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .games-container {
+        gap: 3rem;
+    }
+
+    .game-card {
+        padding: 2rem;
+    }
+
+    .game-image {
+        max-height: 350px;
+    }
+
+    .game-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .game-content p {
+        font-size: 1.05rem;
+    }
+}

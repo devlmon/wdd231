@@ -1,0 +1,36 @@
+/* Larger screens */
+@media only screen and (min-width: 40rem) {
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    header,
+    nav,
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: #ddd 1px solid;
+    }
+
+    /* center navigation items horizontally using grid */
+    .navigation ul {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        border-bottom: none;
+        padding: 0.8rem 1rem;
+    }
+}

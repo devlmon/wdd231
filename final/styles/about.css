@@ -1,0 +1,149 @@
+/* About Page Sections */
+.about-section {
+    background: var(--white, #fff);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--primary-color, #7b287d);
+}
+
+.about-section h2 {
+    color: var(--primary-color, #7b287d);
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Reasoning Section */
+.reasoning-section {
+    background: linear-gradient(135deg, rgba(123, 40, 125, 0.08) 0%, rgba(123, 40, 125, 0.03) 100%);
+}
+
+/* Objectives Section */
+.objectives-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.objectives-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.objectives-list li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+    padding-left: 1.8rem;
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.objectives-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color, #7b287d);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.objectives-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(135deg, rgba(123, 40, 125, 0.05) 0%, rgba(123, 40, 125, 0.02) 100%);
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.contact-item h3 {
+    color: var(--primary-color, #7b287d);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+.contact-item a {
+    color: var(--primary-color, #7b287d);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+    color: #5a1f5a;
+}
+
+/* Responsive Design - Tablet and Larger */
+@media only screen and (min-width: 40rem) {
+    .about-section {
+        padding: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .contact-item {
+        text-align: center;
+    }
+
+    .contact-item h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Responsive Design - Large Screens */
+@media only screen and (min-width: 64rem) {
+    .about-section {
+        padding: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-section p {
+        font-size: 1.05rem;
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .objectives-list {
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-info {
+        gap: 3rem;
+    }
+}

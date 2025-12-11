@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Games for Your Enjoyment</title>
+    <meta name="author" content="Luis Eduardo Montenegro Llamozas">
+    <meta name="description"
+        content="Individual Website Project Home Page part of the Web Frontend Development I course of Luis Eduardo Montenegro Llamozas">
+
+    <meta property="og:title" content="Home - Games for Your Enjoyment">
+    <meta property="og:description"
+        content="Individual Website Project Home Page part of the Web Frontend Development I course of Luis Eduardo Montenegro Llamozas.">
+    <meta property="og:url" content="https://devlmon.github.io/wdd231/final/index.html">
+    <meta property="og:image" content="https://devlmon.github.io/wdd231/final/meta-index.png" />
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <script type="module" src="scripts/index.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="1" height="1">
+        <span>WDD 231 - Games for Your Enjoyment</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="recommended.html">Most Recommended</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home Page</h1>
+        <section class="hero-text">
+            <p class="main-title">What are you playing today?</p>
+            <p class="sub-text">Use the form below to tell us a bit about your preferences, mood and how much
+                time you have. We'll suggest games that fit your situation — quick indie picks, long story-driven
+                adventures, or fun multiplayer titles to share with friends.</p>
+        </section>
+        <section class="gaming-form">
+            <h2>Find a Game For You</h2>
+            <form action="yourgame.html" method="get" class="your-game-form">
+                <fieldset>
+                    <legend class="bold">Your preferences</legend>
+
+                    <label for="genre"><span>Preferred genre*</span>
+                        <select id="genre" name="genre" required>
+                            <option value="" disabled selected>Select a genre...</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="adventure">Sandbox</option>
+                            <option value="rpg">RPG</option>
+                            <option value="strategy">Strategy</option>
+                            <option value="puzzle">Puzzle</option>
+                            <option value="shooter">Shooter</option>
+                            <option value="simulation">Narrative</option>
+                            <option value="sports">Sports</option>
+                        </select>
+                    </label>
+
+                    <label for="platform"><span>Platform*</span>
+                        <select id="platform" name="platform" required>
+                            <option value="" disabled selected>Select a platform...</option>
+                            <option value="pc">PC</option>
+                            <option value="console">Console</option>
+                        </select>
+                    </label>
+
+                    <label for="playtime"><span>Available playtime (hours)*</span>
+                        <input id="playtime" name="playtime" type="number" min="0" max="200" step="1"
+                            placeholder="E.g. 2" required />
+                    </label>
+
+                    <label for="multiplayer"><span>How do you play?</span>
+                        <select id="multiplayer" name="multiplayer">
+                            <option value="any">Any</option>
+                            <option value="singleplayer">Solo</option>
+                            <option value="co-op">Co-op</option>
+                            <option value="multiplayer">Multiplayer</option>
+                        </select>
+                    </label>
+
+                    <label for="feeling"><span>How do you feel?</span>
+                        <select id="feeling" name="feeling">
+                            <option value="neutral">I'd rather not answer that</option>
+                            <option value="fun">Fun</option>
+                            <option value="adventurous">Adventurous</option>
+                            <option value="mysterious">Mysterious</option>
+                            <option value="curious">Curious</option>
+                            <option value="challenging">Challenging</option>
+                            <option value="thoughtful">Thoughtful</option>
+                            <option value="fearful">Fearful</option>
+                            <option value="builder">Builder</option>
+                            <option value="imaginative">Imaginative</option>
+                        </select>
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend class="bold">What do you prefer?</legend>
+
+                    <label><input type="radio" name="preferences" value="relaxed"> Relaxed Gameplay</label>
+                    <label><input type="radio" name="preferences" value="competitive"> Competitive Gameplay</label>
+                    <label><input type="radio" name="preferences" value="story"> Story-driven Gameplay</label>
+                </fieldset>
+
+                <input type="submit" value="Search your next game!">
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/devlmon" target="_blank"><img src="images/github.svg"
+                    alt="Luis Montenegro's Github link" width="1" height="1"></a>
+            <a href="https://www.linkedin.com/in/luismon7/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Luis Montenegro's LinkedIn link" width="1" height="1"></a>
+        </div>
+        <div class="project-info">
+            <p class="bold">WDD231 Final Project</p>
+            <p>Luis Eduardo Montenegro Llamozas</p>
+            <p>&copy;<span id="currentyear"></span> Games for Your Enjoyment</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

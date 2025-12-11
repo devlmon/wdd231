@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Games for Your Enjoyment - Games for Your Enjoyment</title>
+    <meta name="author" content="Luis Eduardo Montenegro Llamozas">
+    <meta name="description"
+        content="Individual Website Project About Page part of the Web Frontend Development I course of Luis Eduardo Montenegro Llamozas">
+
+    <meta property="og:title" content="About Games for Your Enjoyment - Games for Your Enjoyment">
+    <meta property="og:description"
+        content="Individual Website Project About Page part of the Web Frontend Development I course of Luis Eduardo Montenegro Llamozas.">
+    <meta property="og:url" content="https://devlmon.github.io/wdd231/final/about.html">
+    <meta property="og:image" content="https://devlmon.github.io/wdd231/final/meta-about.png" />
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <script type="module" src="scripts/basic.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="1" height="1">
+        <span>WDD 231 - Games for Your Enjoyment</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recommended.html">Most Recommended</a></li>
+            <li class="current"><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>About Games for Your Enjoyment</h1>
+
+        <!-- Section 1: The Reasoning -->
+        <section class="about-section reasoning-section">
+            <h2>Why We Started This</h2>
+            <p>Games have transformed our lives in ways we never expected. They've taught us resilience, creativity, and
+                the value of connection. But for too long, these experiences stayed personal. We realized that our
+                favorite games—the ones that touched our hearts and changed our perspectives—deserve to be shared. Games
+                for Your Enjoyment exists because we believe in the power of recommendations, the importance of sharing
+                what we love, and creating a space where people can discover games that truly matter.</p>
+        </section>
+
+        <!-- Section 2: Our Objectives -->
+        <section class="about-section objectives-section">
+            <h2>Our Objectives</h2>
+            <ul class="objectives-list">
+                <li>Share authentic game recommendations that have personally impacted us</li>
+                <li>Help others discover games that resonate with their emotions and interests</li>
+                <li>Create a judgment-free space where all types of games are celebrated</li>
+                <li>Inspire people to explore new gaming experiences and adventures</li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Contact Information -->
+        <section class="about-section contact-section">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:hello@gamesforyourenjoyment.fake">hello@gamesforyourenjoyment.fake</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+1-555-GAMES-01">+1 (555) GAMES-01</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Address</h3>
+                    <p>123 Gaming Lane<br>Pixel City, PC 12345<br>Internet Kingdom</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/devlmon" target="_blank"><img src="images/github.svg"
+                    alt="Luis Montenegro's Github link" width="1" height="1"></a>
+            <a href="https://www.linkedin.com/in/luismon7/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Luis Montenegro's LinkedIn link" width="1" height="1"></a>
+        </div>
+        <div class="project-info">
+            <p class="bold">WDD231 Final Project</p>
+            <p>Luis Eduardo Montenegro Llamozas</p>
+            <p>&copy;<span id="currentyear"></span> Games for Your Enjoyment</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

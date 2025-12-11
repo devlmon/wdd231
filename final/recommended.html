@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Recommended Games - Games for Your Enjoyment</title>
+    <meta name="author" content="Luis Eduardo Montenegro Llamozas">
+    <meta name="description"
+        content="Individual Website Project Most Recommended Games Page part of the Web Frontend Development I course of Luis Eduardo Montenegro Llamozas">
+
+    <meta property="og:title" content="Most Recommended Games - Games for Your Enjoyment">
+    <meta property="og:description"
+        content="Individual Website Project Most Recommended Games Page part of the Web Frontend Development I course of Luis Eduardo Montenegro Llamozas.">
+    <meta property="og:url" content="https://devlmon.github.io/wdd231/final/recommended.html">
+    <meta property="og:image" content="https://devlmon.github.io/wdd231/final/meta-recommended.png" />
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/recommended.css">
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <script type="module" src="scripts/basic.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="1" height="1">
+        <span>WDD 231 - Games for Your Enjoyment</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="#">Most Recommended</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>The Most Recommended Games</h1>
+
+        <!-- Section 1: Why Games Matter -->
+        <section class="intro-section">
+            <h2>Why Games Are Amazing</h2>
+            <p>Games are so much more than entertainment. They are worlds of endless possibility, spaces where we can
+                challenge ourselves, express creativity, and connect with others. Whether you're exploring vast
+                landscapes, building something from nothing, or embarking on epic adventures with friends, games have
+                the power to transform how we see ourselves and what we're capable of.</p>
+            <p>Here are two games that have personally meant the most to me—games that have taught me, inspired me, and
+                shown me that I'm capable of far more than I ever thought possible.</p>
+        </section>
+
+        <!-- Section 2: Terraria -->
+        <section class="games-container">
+            <article class="game-card">
+                <img src="images/terraria-logo.webp" alt="Terraria game screenshot" class="game-image">
+                <div class="game-content">
+                    <h3>Terraria</h3>
+                    <p>Terraria is more than just a 2D sandbox—it's a journey of self-discovery. When you start with
+                        nothing but a pickaxe, facing the unknown depths below, there's a feeling of vulnerability. But
+                        as you gather resources, build structures, and grow stronger, something shifts. Every boss
+                        defeated, every new biome explored, every challenge overcome becomes proof that you are capable.
+                        Terraria teaches patience, strategy, and resilience. It whispers, "You can do this," and
+                        suddenly, you believe it.</p>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <img src="images/minecraft-logo.webp" alt="Minecraft game screenshot" class="game-image">
+                <div class="game-content">
+                    <h3>Minecraft</h3>
+                    <p>Minecraft is a canvas of infinite freedom and endless adventure with friends. Build together,
+                        explore biomes, create worlds, and share your imagination with people you care about. The beauty
+                        of Minecraft lies not in having a single goal, but in choosing your own path—whether that's
+                        building a grand castle, discovering a hidden village, or simply enjoying peaceful moments
+                        crafting and mining alongside friends. It's a place where friendship grows through shared
+                        creativity and collaborative adventures.</p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/devlmon" target="_blank"><img src="images/github.svg"
+                    alt="Luis Montenegro's Github link" width="1" height="1"></a>
+            <a href="https://www.linkedin.com/in/luismon7/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Luis Montenegro's LinkedIn link" width="1" height="1"></a>
+        </div>
+        <div class="project-info">
+            <p class="bold">WDD231 Final Project</p>
+            <p>Luis Eduardo Montenegro Llamozas</p>
+            <p>&copy;<span id="currentyear"></span> Games for Your Enjoyment</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

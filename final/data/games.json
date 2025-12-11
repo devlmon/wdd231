@@ -1,0 +1,103 @@
+{
+    "games": [
+        {
+            "name": "The Legend of Zelda: Breath of the Wild",
+            "logo": "images/zelda-logo.webp",
+            "description": "An open-world adventure game with exploration, puzzle-solving, and combat in a vast kingdom.",
+            "genre": "Adventure",
+            "feeling": "Adventurous",
+            "multiplayer": "No",
+            "platform": "Console",
+            "playtime": 50,
+            "preference": "Story-driven"
+        },
+        {
+            "name": "Minecraft",
+            "logo": "images/minecraft-logo.webp",
+            "description": "A sandbox game where creativity and exploration are limitless with block-building mechanics.",
+            "genre": "Sandbox",
+            "feeling": "Imaginative",
+            "multiplayer": "Yes",
+            "platform": "PC",
+            "playtime": 0,
+            "preference": "Relaxed"
+        },
+        {
+            "name": "Elden Ring",
+            "logo": "images/elden-logo.webp",
+            "description": "A challenging open-world RPG featuring complex combat, exploration, and an intricate storyline.",
+            "genre": "RPG",
+            "feeling": "Challenging",
+            "multiplayer": "Yes",
+            "platform": "Console",
+            "playtime": 60,
+            "preference": "Competitive"
+        },
+        {
+            "name": "League of Legends",
+            "logo": "images/league-logo.webp",
+            "description": "A strategic team-based MOBA with champions, strategic gameplay, and a competitive esports scene.",
+            "genre": "Strategy",
+            "feeling": "Competitive",
+            "multiplayer": "Yes",
+            "platform": "PC",
+            "playtime": 0,
+            "preference": "Competitive"
+        },
+        {
+            "name": "Portal 2",
+            "logo": "images/portal-logo.webp",
+            "description": "A puzzle game with innovative portal mechanics, physics-based challenges, and witty writing.",
+            "genre": "Puzzle",
+            "feeling": "Curious",
+            "multiplayer": "Multiplayer",
+            "platform": "PC",
+            "playtime": 8,
+            "preference": "Story-driven"
+        },
+        {
+            "name": "Counter-Strike 2",
+            "logo": "images/counter-logo.webp",
+            "description": "A tactical first-person shooter emphasizing teamwork, precision, and strategic gameplay.",
+            "genre": "Shooter",
+            "feeling": "Competitive",
+            "multiplayer": "Multiplayer",
+            "platform": "PC",
+            "playtime": 0,
+            "preference": "Competitive"
+        },
+        {
+            "name": "Disco Elysium",
+            "logo": "images/elysium-logo.webp",
+            "description": "A narrative-focused RPG with dialogue-driven gameplay and an immersive noir world.",
+            "genre": "Narrative",
+            "feeling": "Thoughtful",
+            "multiplayer": "No",
+            "platform": "PC",
+            "playtime": 20,
+            "preference": "Story-driven"
+        },
+        {
+            "name": "NBA 2K24",
+            "logo": "images/nba-logo.webp",
+            "description": "A premier basketball simulation with realistic gameplay, player customization, and online competition.",
+            "genre": "Sports",
+            "feeling": "Competitive",
+            "multiplayer": "Yes",
+            "platform": "Console",
+            "playtime": 0,
+            "preference": "Competitive"
+        },
+        {
+            "name": "Terraria",
+            "logo": "images/terraria-logo.webp",
+            "description": "A 2D sandbox game with mining, crafting, exploration, and boss battles in a pixelated world.",
+            "genre": "Sandbox",
+            "feeling": "Imaginative",
+            "multiplayer": "Yes",
+            "platform": "PC",
+            "playtime": 0,
+            "preference": "Relaxed"
+        }
+    ]
+}

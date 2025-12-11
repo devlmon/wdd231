@@ -1,0 +1,64 @@
+.your-game {
+    margin: 0 auto;
+}
+
+.your-game-card {
+    width: 100%;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 1.35rem;
+    display: grid;
+    grid-template-areas:
+        "img"
+        "name"
+        "genre"
+        "multiplayer"
+        "description";
+    justify-items: center;
+    box-shadow: 0 10px 30px rgba(11, 12, 13, 0.25);
+    border: 1px solid rgba(123, 40, 125, 0.10);
+}
+
+.your-game-card p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0.45rem;
+}
+
+#logo {
+    grid-area: img;
+    width: 75%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+#name {
+    grid-area: name;
+    text-decoration: solid underline var(--primary-color) 4px;
+    margin-top: 0.90rem;
+    margin-bottom: 1.35rem;
+}
+
+#genre {
+    grid-area: genre;
+}
+
+#multiplayer {
+    grid-area: multiplayer;
+}
+
+#description {
+    grid-area: description;
+}
+
+@media only screen and (min-width: 40rem) {
+    .your-game-card {
+        grid-template-areas:
+            "img name"
+            "img genre"
+            "img multiplayer"
+            "img description";
+    }
+}
